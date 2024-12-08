@@ -105,7 +105,7 @@ def chat_interface(agent, chat_store, container):
     if not os.path.exists(CONVERSATION_FILE) or os.path.getsize(CONVERSATION_FILE) == 0:
         with container:
             with st.chat_message(name="assistant", avatar=professor_avatar):
-                st.markdown("Chào bạn, mình là MENTAL CARE. Mình luôn ở đây để để lắng nghe, chia sẻ và đồng hành cùng bạn !")
+                st.markdown("Chào bạn, mình là MENTAL CARE. Mình luôn ở đây để để lắng nghe, chia sẻ và đồng hành cùng bạn 🎈")
     prompt = st.chat_input("Hãy chia sẻ vấn đề của bạn tại đây ...")
     if prompt:
         with container:
